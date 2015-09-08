@@ -1,0 +1,22 @@
+{
+  "name": "is-node-stream",
+  "version": "0.0.0",
+  "description": "Strictly and correctly checks if value is a nodejs stream.",
+  "repository": "tunnckoCore/is-node-stream",
+  "author": "Charlike Mike Reagent <@tunnckoCore> (http://www.tunnckocore.tk)",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "test": "standard && node test.js"
+  },
+  "dependencies": {
+    "is-node-emitter": "^1.0.2"
+  },
+  "devDependencies": {
+    "assertit": "^0.1.0"
+  },
+  "files": [
+    "index.js"
+  ],
+  "keywords": []
+}
