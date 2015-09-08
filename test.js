@@ -61,20 +61,20 @@ test('isNodeStream.readable() return `false` otherwise', function (done) {
   done()
 })
 
-test('isNodeStream.writable() return `true` for writable streams', function (done) {
-  test.equal(isNodeStream.writable(process.stdout), true)
-  test.equal(isNodeStream.writable(new stream.Duplex()), true)
-  test.equal(isNodeStream.writable(new stream.Writable()), true)
-  test.equal(isNodeStream.writable(new stream.Transform()), true)
-  test.equal(isNodeStream.writable(new stream.PassThrough()), true)
+test('isNodeStream.writable() returns `true` for writable streams', function (done) {
   test.equal(isNodeStream.writable(fs.createWriteStream('foobar.log')), true)
+  test.equal(isNodeStream.writable(new stream.PassThrough()), true)
+  test.equal(isNodeStream.writable(new stream.Transform()), true)
+  test.equal(isNodeStream.writable(new stream.Writable()), true)
+  test.equal(isNodeStream.writable(new stream.Duplex()), true)
+  test.equal(isNodeStream.writable(process.stdout), true)
   done()
 })
 
 test('isNodeStream.writable() return `false` otherwise', function (done) {
-  test.equal(isNodeStream.writable(process.stdin), false)
-  test.equal(isNodeStream.writable(new stream.Readable()), false)
   test.equal(isNodeStream.writable(fs.createReadStream('package.json')), false)
+  test.equal(isNodeStream.writable(new stream.Readable()), false)
+  test.equal(isNodeStream.writable(process.stdin), false)
   done()
 })
 
