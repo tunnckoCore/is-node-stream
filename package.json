@@ -18,5 +18,22 @@
   "files": [
     "index.js"
   ],
-  "keywords": []
+  "keywords": [
+    "check",
+    "correct",
+    "detect",
+    "is",
+    "readable",
+    "stream",
+    "streams",
+    "strictly",
+    "strictness",
+    "through",
+    "type",
+    "udplex",
+    "util",
+    "utils",
+    "validate",
+    "writable"
+  ]
 }
