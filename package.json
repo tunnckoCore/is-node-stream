@@ -1,6 +1,6 @@
 {
   "name": "is-node-stream",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "description": "Strictly and correctly checks if value is a nodejs stream.",
   "repository": "tunnckoCore/is-node-stream",
   "author": "Charlike Mike Reagent <@tunnckoCore> (http://www.tunnckocore.tk)",
